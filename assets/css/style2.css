@@ -1,0 +1,44 @@
+.calendar {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 600px;
+  }
+  
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  }
+  
+  th {
+  height: 40px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  }
+  
+  td {
+  height: 60px;
+  text-align: center;
+  border: 1px solid #ccc;
+  }
+  
+  .prev-month {
+  color: #ccc;
+  }
+  
+  .next-month {
+  color: #ccc;
+  }
+  
+  td:not(.prev-month):not(.next-month):hover,
+  td:not(.prev-month):not(.next-month):focus {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  }
+  
+  td:not(.prev-month):not(.next-month) {
+  color: red;
+  }
