@@ -130,6 +130,7 @@ p {
 }
 img{border:none;max-width:100%; height:auto;}
 ul{
+
 	padding: 0;
     margin: 0 auto;
     list-style: none;
@@ -519,6 +520,13 @@ ul.cart-list > li.total {
 /* .carousel-indicators */
 
 /* .carousel-fade */
+/* .carousel-fade p{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+} */
+
+
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -549,7 +557,11 @@ ul.cart-list > li.total {
 /*-------------------------------------
         4. Populer-post
 --------------------------------------*/
-.populer-products{padding:100px 0 0;}
+.populer-products{
+    padding:100px 0 0; 
+    margin: 0 auto;
+    max-width: 880px; 
+}
 .single-populer-products{
     position: relative;
     min-height:280px;
@@ -557,8 +569,19 @@ ul.cart-list > li.total {
     text-align: center;
     overflow:hidden;
 }
-.single-populer-product-img.mt40{margin-top: 40px;}
+.single-populer-product-img.mt40{margin-top: 40px; font-size: 50px;}
 .single-inner-populer-products{margin-top: 40px;padding: 0 45px 0 30px;text-align: left;}
+
+.single-populer-product-img.mt40 .fa-line{
+    color: #16d009;
+}
+.single-populer-product-img.mt40 .fa-calendar{
+    color: #364591;
+}
+.single-populer-product-img.mt40 .fa-business-time{
+    color: #c29a54;
+}
+
 
 .single-populer-products h2 a {
     display: inline-block;
@@ -1053,3 +1076,404 @@ span.feature-review {margin-left: 10px;}
     100%  {bottom:7px;}
 }
 /*========================Thank you=================
+
+
+
+/* ============products.html=============== */
+.boxer {
+    width: 100%;
+    padding-right: 18px;
+    padding-left: 18px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+.boxer {
+    max-width: 540px;
+}
+}
+
+@media (min-width: 768px) {
+.boxer {
+    max-width: 720px;
+}
+}
+
+@media (min-width: 992px) {
+.boxer {
+    max-width: 960px;
+}
+}
+
+@media (min-width: 1200px) {
+.boxer {
+    max-width: 1140px;
+}
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+.badge {
+    transition: none;
+}
+}
+
+.badge-dark {
+    color: #fff;
+    align-content: center;
+    background-color: #d5d5d5;
+    border: none;
+}
+
+a.badge-dark:hover, a.badge-dark:focus {
+color: #fff;
+background-color: rgb(189, 189, 189);
+}
+
+a.badge-dark:focus, a.badge-dark.focus {
+outline: 0;
+box-shadow: 0 0 0 0.2rem rgba(222, 222, 222, 0.5);
+}
+
+.text-danger {
+    color: #d1011c !important;
+}
+
+a.text-danger:hover, a.text-danger:focus {
+color: #850112 !important;
+}
+
+.mr-3{
+    margin-right: 1rem !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+
+/* customize-service section */
+.customize-service{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.customize-service h1{
+    font-size: 35px;
+}
+
+.customize-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.customize-col img{
+    width: 100%;
+    display: block; /*讓紅色顯示出的可以合貼圖片框框*/
+}
+
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer :hover{
+    background: #fff;
+    /* opacity: 0.7; */
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #e99c2e;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.customize-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* ==========產品 ====================*/
+
+.sofa-demo{
+    /* padding:100px 0 0;  */
+    padding-top: 100px;
+    padding-right: 50px;
+    margin: 0 auto;
+    max-width: 1100px; 
+    justify-content: center;
+}
+.single-sofa{
+    position: relative;
+    min-height:320px;
+    width: 1200px;
+    background: #f8f9fc;
+    text-align: center;
+    /* overflow:hidden; */
+}
+.single-sofa-img.mt40{
+    margin-top: 40px; 
+    font-size: 90px;
+}
+
+.single-inner-sofa{
+    margin-top: 40px;
+    padding: 0 45px 40px 30px;
+    text-align: left;
+}
+
+.single-sofa h2{
+    padding-left: 30px;
+}
+
+.single-sofa h2 a {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    color: #5f5b57;
+    margin: 25px 0 22px;
+    -webkit-transition: 0.3s linear; 
+    -moz-transition: 0.3s linear; 
+    -ms-transition: 0.3s linear; 
+    -o-transition: 0.3s linear; 
+    transition: 0.3s linear;
+}
+.single-sofa:hover h2 a{color: #e99c2e;}
+.single-inner-sofa-txt a {
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+}
+.single-inner-sofa-txt p {
+    font-size: 18px;
+    /* padding: 0px 20px; */
+    padding-left: 30px;
+    text-transform: initial;
+}
+.single-inner-sofa-txt {margin-top: 8px;}
+.single-sofa .single-inner-sofa-txt h2 a{margin: 0;}
+.single-inner-sofa-txt span{text-transform:lowercase;}
+.single-inner-sofa-txt p {
+    font-size: 18px;
+    margin: 18px 0 13px;
+}
+.sofa-price h4 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 30px;
+    text-transform: initial;
+}
+.sofa-price h4 span{color: #e99c2e;}
+.btn-cart.welcome-add-cart.sofa-btn {
+    width: 118px;
+    height: 40px;
+    line-height: 40px;
+    color: #5f5b57;
+    background: transparent;
+    border: 1px solid #5f5b57;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 40px;
+    -webkit-transition: 0.3s linear; 
+    -moz-transition: 0.3s linear; 
+    -ms-transition: 0.3s linear; 
+    -o-transition: 0.3s linear; 
+    transition: 0.3s linear;
+}
+.single-sofa:hover .btn-cart.welcome-add-cart.sofa-btn {
+    color: #fff;
+    background: #5f5b57;
+    border: 1px solid #5f5b57;
+}
+
+
+/*  */
+/* ======================Slideshow container================ */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.action, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* ======= */
+.sofa-descript-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.sofa-descript-img ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    width: 600px;
+
+}
+
+.sofa-descript h1{
+    width: 100%;
+    margin: 0 auto;
+    color: #d3910d;
+    position: absolute;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+/*  */
+.welcome-hero-img{
+    margin-top: 10%;
+    /* margin-left: 80px;
+    margin-right: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-inline-end: 100px;
+    margin-inline-start: 100px; */
+
+}
+
+.custo-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.custo-col img{
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    /* display: block; 讓紅色顯示出的可以合貼圖片框框 */
+}
+
+
+/*  */
+.askstaff h1{
+    padding-top: 20px;
+    color: #850112;
+    font-size: 24px;
+}
